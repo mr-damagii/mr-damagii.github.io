@@ -16,6 +16,11 @@ $color-content-paragraph: $color-foreground;
 $color-content-link: #6495ed;
 $color-content-pullquote: $color-foreground;
 
-@mixin color-background($darkness: 0) {
-  background-image: linear-gradient(to top, darken(#a18cd1, $darkness) 0%, darken(#fbc2eb, $darkness) 100%);
+@mixin color-background($darkness: 0, $inverted: false) {
+  @if $inverted {
+    background-image: linear-gradient(to top, darken(#fbc2eb, $darkness) 0%, darken(#a18cd1, $darkness) 100%);
+  }
+  @else {
+    background-image: linear-gradient(to top, darken(#a18cd1, $darkness) 0%, darken(#fbc2eb, $darkness) 100%);
+  }
 }

@@ -1,0 +1,56 @@
+@import './colors';
+@import './structure';
+
+.site-footer__container {
+  @include color-background($inverted: true);
+
+  border-top: .5rem solid #fbc2eb;
+  color: #fff;
+
+  .site-footer {
+    display: flex;
+    margin: {
+      left: auto;
+      right: auto;
+    }
+    max-width: $layout-text-column;
+    padding: 2rem;
+  }
+
+  nav, .social__container {
+    flex: 1;
+    margin: {
+      left: 2.5rem;
+      right: 2.5rem;
+    }
+  }
+
+  nav {
+    border-right: 1px solid #fff;
+  }
+
+  ul {
+    padding-left: 3rem;
+  }
+
+  ul, li {
+    list-style-type: circle;
+  }
+
+  h5 {
+    color: #fff;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: #fff;
+    line-height: 1.5rem;
+    text-decoration: none;
+    text-transform: lowercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

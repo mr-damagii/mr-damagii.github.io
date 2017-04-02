@@ -1,0 +1,42 @@
+---
+layout: base
+---
+<header class="project__hero-container">
+  <div class="hero__content">
+    <h1>{{ page.title }}</h1>
+
+    <p class="h2">{{ page.description }}</p>
+  </div>
+
+  {% if page.image != blank %}
+  <img src="{{ page.image }}" />
+  {% endif %}
+</header>
+
+<article class="content__project-container article__content">
+  {{ content }}
+
+  <div class="social__container addthis_inline_share_toolbox"></div>
+</article>
+
+
+<div class="comment__container"> 
+ <div id="disqus_thread"></div> 
+
+ <script> 
+  var disqus_config = function () { 
+    this.page.url = '<%= @page[:canonical] %>';   
+    this.page.identifier = '<%= @page[:uid] %>';  
+  }; 
+
+  (function() { // DON'T EDIT BELOW THIS LINE 
+  var d = document, s = d.createElement('script'); 
+  s.src = 'https://adamkent-me.disqus.com/embed.js'; 
+  s.setAttribute('data-timestamp', +new Date()); 
+  (d.head || d.body).appendChild(s); 
+  })(); 
+  </script> 
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> 
+ 
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58c6451d76454cff"></script> 
+ </div> 

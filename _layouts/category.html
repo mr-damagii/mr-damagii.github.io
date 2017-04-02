@@ -1,8 +1,18 @@
 ---
 layout: base
 ---
-{% for post in site.categories[page.category] %}
-<p>
-  <a href="{{ post.url }}">{{ post.title }}</a>
-</p>
-{% endfor %}
+<ul>
+  {% for post in site.categories[page.category] %}
+  <li>
+    <a href="{{ post.url }}">
+      <span>{{ post.title }}</span>
+
+      {% if post.image == blank %}
+      <img src="/assets/images/default.jpg" />
+      {% else %}
+      <img src="{{ post.image }}" />
+      {% endif %}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
