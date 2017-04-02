@@ -1,0 +1,52 @@
+@import './structure';
+
+.category__container {
+  background: #fff;
+  margin: 2.75rem auto;
+  max-width: $layout-text-column;
+  padding: 2.75rem;
+
+  .category-item__container {
+    display: block;
+    height: 15rem;
+    overflow: hidden;
+    position: relative;
+
+    .category-item__header {
+      background: rgba(0, 0, 0, .6);
+      display: block;
+      padding: 1rem;
+      position: absolute;
+      text-align: center;
+      transition: transform .1s;
+      width: 100%;
+      z-index: 1;
+
+      h2, p {
+        color: #fff;
+        margin: 0;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    img {
+      position: absolute;
+      transition: transform .1s;
+      transform: scale(1);
+      width: 100%;
+    }
+
+    &:hover {
+      .category-item__header {
+        transform: translateY(-110%);
+      }
+
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
