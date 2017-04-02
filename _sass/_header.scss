@@ -1,0 +1,55 @@
+@import './structure.scss';
+@import './colors.scss';
+
+.main__header {
+  @include color-background;
+
+  border-bottom: .5rem solid #fbc2eb;
+  
+  .header__logo {
+    border-bottom: 2px solid #fff;
+    margin: 0 2.5%;
+
+    .logo__container {
+      margin: 0 2.5%;
+    }
+
+    a {
+      color: #fff;
+      font-size: 1.5rem;
+      line-height: 5rem;
+      text-decoration: none;
+    }
+  }
+
+  nav {
+    margin: {
+      left: auto;
+      right: auto;
+    }
+    max-width: $layout-text-column;
+    width: 90%;
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      flex: 1;
+      transition: background .1s;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, .3);
+      }
+    }
+
+    a {
+      color: #fff;
+      display: block;
+      font-size: 1rem;
+      line-height: 3rem;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+}

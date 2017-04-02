@@ -1,0 +1,21 @@
+$color-01: #34DEFF;
+$color-02: #5EBDFF;
+$color-03: #71AEFF;
+$color-04: #8B95F6;
+$color-05: #B686DA;
+
+$color-foreground: #111;
+$color-background: #fafafa;
+
+$color-page: $color-background;
+
+$color-main-nav-background: #54add7;
+
+$color-content-header: $color-foreground;
+$color-content-paragraph: $color-foreground;
+$color-content-link: #6495ed;
+$color-content-pullquote: $color-foreground;
+
+@mixin color-background($darkness: 0) {
+  background-image: linear-gradient(to top, darken(#a18cd1, $darkness) 0%, darken(#fbc2eb, $darkness) 100%);
+}

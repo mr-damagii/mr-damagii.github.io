@@ -1,0 +1,63 @@
+@import './structure.scss';
+@import './colors.scss';
+
+.article-index__container {
+  background: #fff;
+  margin: 2.75rem auto;
+  max-width: $layout-text-column;
+  padding: 2.75rem;
+
+  .article-list__container {
+    display: grid;
+  }
+
+  h1 {
+    margin: {
+      bottom: 0;
+      top: 0;
+    }
+  }
+
+  li {
+
+  }
+
+  a {
+    color: #111;
+    
+    text-decoration: none;
+    transition: color .1s;
+
+    &:hover {
+      color: lighten(#111, 40%);
+    }
+
+    article, h3, h4 {
+      color: inherit;
+    }
+  }
+}
+
+.article__container {
+  background: #fff;
+  margin: 2.75rem auto;
+  max-width: $layout-text-column;
+  padding: 2.75rem;
+
+  .article__header h1 {
+    margin: {
+      bottom: 0;
+      top: 0;
+    }
+  }
+
+  .article__content {
+    h2:first-child {
+      color: lighten($color-foreground, 25%);
+    }
+
+    *:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
