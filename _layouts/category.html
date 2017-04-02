@@ -12,10 +12,10 @@ layout: base
           <p class="h3">{{ post.description }}</p>
         </header>
 
-        {% if post.image == blank %}
-        <img src="/assets/images/default.jpg" />
+        {% if post.preview == nil %}
+        <span class="category-item__image" style="background-image: url('/assets/images/default.jpg');"></span>
         {% else %}
-        <img src="{{ post.image }}" />
+        <span class="category-item__image" style="background-image: url('{{ post.preview }}');"></span>
         {% endif %}
       </a>
     </li>

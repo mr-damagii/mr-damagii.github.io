@@ -2,7 +2,8 @@
 layout: project
 title: Autotrader
 description: NZ Classified site for buyers and sellers
-image: /assets/images/projects/autotrader.jpg
+preview: /assets/images/projects/autotrader-image.jpg
+image: /assets/images/projects/autotrader-image.jpg
 ---
 Everybody has heard of Autotrader, its a big name in at least the UK and US. This is the NZ version and it was firmly a brownfield project by the time I was involved.
 
