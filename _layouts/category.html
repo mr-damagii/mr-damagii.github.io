@@ -1,21 +1,21 @@
 ---
 layout: base
 ---
-<div class="category__container">
+<div class="category-container">
   <ul>
     {% for post in site.categories[page.category] %}
     <li>
-      <a class="category-item__container" href="{{ post.url }}">
-        <header class="category-item__header">
+      <a class="category-item-container" href="{{ post.url }}">
+        <header class="category-item-header">
           <h2>{{ post.title }}</h2>
 
           <p class="h3">{{ post.description }}</p>
         </header>
 
         {% if post.preview == nil %}
-        <span class="category-item__image" style="background-image: url('/assets/images/default.jpg');"></span>
+        <span class="category-item-image" style="background-image: url('/assets/images/default.jpg');"></span>
         {% else %}
-        <span class="category-item__image" style="background-image: url('{{ post.preview }}');"></span>
+        <span class="category-item-image" style="background-image: url('{{ post.preview }}');"></span>
         {% endif %}
       </a>
     </li>

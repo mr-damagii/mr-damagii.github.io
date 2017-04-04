@@ -1,7 +1,8 @@
 @import './structure.scss';
+@import './colors';
 
-.comment__container {
-  background: #fff;
+.comment-container {
+  background: $color-page-background;
   margin: 2.75rem auto;
   max-width: $layout-text-column;
   padding: 2.75rem;

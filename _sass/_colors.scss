@@ -1,26 +1,24 @@
-$color-01: #34DEFF;
-$color-02: #5EBDFF;
-$color-03: #71AEFF;
-$color-04: #8B95F6;
-$color-05: #B686DA;
+$color-01: #fbc2eb;
+$color-02: #a18cd1;
 
-$color-foreground: #111;
-$color-background: #fafafa;
+$color-body-background: $color-01;
 
-$color-page: $color-background;
+$color-header-foreground: #fff;
 
-$color-main-nav-background: #54add7;
+$color-page-background: #fafafa;
 
-$color-content-header: $color-foreground;
-$color-content-paragraph: $color-foreground;
+$color-content-background: #fff;
+$color-content-header: #111;
+$color-content-paragraph: #111;
 $color-content-link: #6495ed;
-$color-content-pullquote: $color-foreground;
+
+$color-footer-foreground: #fff;
 
 @mixin color-background($darkness: 0, $inverted: false) {
   @if $inverted {
-    background-image: linear-gradient(to top, darken(#fbc2eb, $darkness) 0%, darken(#a18cd1, $darkness) 100%);
+    background-image: linear-gradient(to top, darken($color-01, $darkness) 0%, darken($color-02, $darkness) 100%);
   }
   @else {
-    background-image: linear-gradient(to top, darken(#a18cd1, $darkness) 0%, darken(#fbc2eb, $darkness) 100%);
+    background-image: linear-gradient(to top, darken($color-02, $darkness) 0%, darken($color-01, $darkness) 100%);
   }
 }

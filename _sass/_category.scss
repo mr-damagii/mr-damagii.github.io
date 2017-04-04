@@ -1,6 +1,6 @@
 @import './structure';
 
-.category__container {
+.category-container {
   background: #fff;
   margin: 2.75rem auto;
   max-width: $layout-text-column;
@@ -14,13 +14,13 @@
     }
   }
 
-  .category-item__container {
+  .category-item-container {
     display: block;
     height: 15rem;
     overflow: hidden;
     position: relative;
 
-    .category-item__header {
+    .category-item-header {
       background: rgba(255, 255, 255, .85);
       box-sizing: border-box;
       display: block;
@@ -41,7 +41,7 @@
       }
     }
 
-    .category-item__image {
+    .category-item-image {
       background-position: center;
       background-size: cover;
       filter: brightness(80%);
@@ -57,11 +57,11 @@
     }
 
     &:hover {
-      .category-item__header {
+      .category-item-header {
         transform: translateY(-110%);
       }
 
-      .category-item__image {
+      .category-item-image {
         filter: brightness(100%);
         transform: scale(1.1);
       }

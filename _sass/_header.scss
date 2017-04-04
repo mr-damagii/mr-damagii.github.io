@@ -1,21 +1,21 @@
 @import './structure.scss';
 @import './colors.scss';
 
-.main__header {
+.site-header-container {
   @include color-background;
 
-  border-bottom: .5rem solid #fbc2eb;
+  border-bottom: .5rem solid $color-01;
   
-  .header__logo {
-    border-bottom: 2px solid #fff;
+  .logo-container {
+    border-bottom: 2px solid $color-header-foreground;
     margin: 0 2.5%;
 
-    .logo__container {
+    .logo {
       margin: 0 2.5%;
     }
 
     a {
-      color: #fff;
+      color: $color-header-foreground;
       font-size: 1.5rem;
       line-height: 5rem;
       text-decoration: none;
@@ -44,7 +44,7 @@
     }
 
     a {
-      color: #fff;
+      color: $color-header-foreground;
       display: block;
       font-size: 1rem;
       line-height: 3rem;

@@ -4,16 +4,18 @@
   <head>
     <title>{{ page.title }}</title>
 
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Open+Sans:300" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/stylesheets/reset.css" />
     <link rel="stylesheet" href="/assets/stylesheets/app.css" />
   </head>
 
   <body>
-    <div class="main__container">
-      <header class="main__header">
-        <div class="header__logo">
-          <div class="logo__container">
+    <div class="base-container">
+      <header class="site-header-container">
+        <div class="logo-container">
+          <div class="logo">
             <a href="/">adamkent.me</a>
           </div>
         </div>
@@ -22,30 +24,30 @@
           <ul>
             <li>
               <a href="/">
-                <span class="navigation__content">Home</span>
+                <span>Home</span>
               </a>
             </li>
 
             <li>
-              <a class="navigation__articles" href="/articles">
-                <span class="navigation__content">Articles</span>
+              <a href="/articles">
+                <span>Articles</span>
               </a>
             </li>
 
             <li>
-              <a class="navigation__projects" href="/projects">
-                <span class="navigation__content">Projects</span>
+              <a href="/projects">
+                <span>Projects</span>
               </a>
             </li>
           </ul>
         </nav>
       </header>
 
-      <div class="content__container">
+      <div class="content-container">
         {{ content }}
       </div>
 
-      <footer class="site-footer__container">
+      <footer class="site-footer-container">
         <div class="site-footer">
           <nav>
             <h5>Sitemap</h5>
@@ -53,25 +55,25 @@
             <ul>
               <li>
                 <a href="/">
-                  <span class="navigation__content">Home</span>
+                  <span>Home</span>
                 </a>
               </li>
 
               <li>
-                <a class="navigation__articles" href="/articles">
-                  <span class="navigation__content">Articles</span>
+                <a href="/articles">
+                  <span>Articles</span>
                 </a>
               </li>
 
               <li>
-                <a class="navigation__projects" href="/projects">
-                  <span class="navigation__content">Projects</span>
+                <a href="/projects">
+                  <span>Projects</span>
                 </a>
               </li>
             </ul>
           </nav>
 
-          <div class="social__container">
+          <div class="social-container">
             <h5>Check me out on...</h5>
 
             <ul>

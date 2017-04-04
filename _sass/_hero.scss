@@ -1,0 +1,51 @@
+@import './structure';
+@import './colors';
+
+.hero-container {
+  align-items: center;
+  background-color: #444;
+  display: flex;
+  justify-items: center;
+  min-height: 50vh;
+  overflow: hidden;
+  position: relative;
+
+  .hero-content {
+    color: $color-header-foreground;
+    font-size: 3rem;
+    margin: {
+      left: auto;
+      right: auto;
+    }
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+
+    h1 {
+      color: $color-header-foreground;
+      font-size: 4.5rem;
+      line-height: 3.5rem;
+      margin: 0;
+      word-break: break-all;
+    }
+    
+    p {
+      color: $color-header-foreground;
+      margin: 0;
+      margin-top: .5rem;
+      max-width: $layout-text-column;
+    }
+  }
+
+  .hero-background {
+    background-image: url('/assets/images/default.jpg');
+    background-position: center;
+    background-size: cover;
+    content: '';
+    display: block;
+    height: 100%;
+    filter: brightness(20%) blur(3px);
+    position: absolute;
+    width: 100%;
+  }
+}

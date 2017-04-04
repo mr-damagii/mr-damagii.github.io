@@ -1,10 +1,64 @@
+@import './colors';
+
 $layout-text-column: 685px;
 
-.main__container {
-  background-color: #fafafa;
+html, body {
   min-height: 100vh;
 }
 
-.content__container {
-  min-height: 100vh;
+body {
+  background-color: $color-body-background;
+  color: $color-content-paragraph;
+  font-family: 'Noto Serif', serif;
+  font-size: 1rem;
+}
+
+@for $i from 1 through 6 {
+  h#{$i}, .h#{$i} {
+    color: $color-content-header;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+  }
+}
+
+a {
+  color: $color-content-link;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+}
+
+h1, .h1 {
+  font-size: 2rem;
+  line-height: 2.75rem;
+  margin-bottom: 2.75rem;
+}
+
+h2, .h2 {
+  font-size: 1.8rem;
+  line-height: 2.55rem;
+  margin-bottom: 2.55rem;
+}
+
+h3, .h3 {
+  font-size: 1.6rem;
+  line-height: 2.31rem;
+  margin-bottom: 2.31rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+  line-height: 2.18rem;
+  margin-bottom: 2.18rem;
+}
+
+h5 .h5, p, .p {
+  font-size: 1rem;
+  line-height: 1.68rem;
+  margin-bottom: 1.68rem;
+}
+
+h6, .h6 {
+  font-size: .8rem;
+  line-height: 1.43rem;
+  margin-bottom: 1.43rem;
 }

@@ -1,4 +1,10 @@
-.article__content {
+@import './colors';
+
+.content-container {
+  min-height: 100vh;
+}
+
+.article-content {
   ul, li {
     list-style-type: circle;
   }
@@ -13,7 +19,7 @@
     line-height: 1.68rem;
   }
 
-  .social__container {
+  .social-container {
     padding-top: 1rem;
   }
 }

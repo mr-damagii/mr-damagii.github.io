@@ -2,6 +2,7 @@
 layout: project
 title: Autotrader
 description: NZ Classified site for buyers and sellers
+date: 2012-05-01 12:00:00
 preview: /assets/images/projects/autotrader-image.jpg
 image: /assets/images/projects/autotrader-image.jpg
 ---
